@@ -1,0 +1,585 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/apercu-pro');
+@import url('https://fonts.cdnfonts.com/css/cheltenham-lt');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+html {
+    /* Escala tipografica */
+    font-size: 62.5%;
+
+    /* Familias tipograficas */
+    --font-1: 'Apercu Pro', sans-serif;
+    --font-2: 'Cheltenham LT', sans-serif;
+    --font-3: 'Nunito Sans', sans-serif;
+
+    /* Variables tipograficas */
+    --text-caption: 1.2rem;
+    --text-note: 1.4rem;
+    --text-base: 1.8rem;
+    --text-subheader: 2rem;
+    --text-title: 2.8rem;
+    --text-headline: 4.2rem;
+    --text-display: 8.8rem;
+    --text-jumbo: 14rem;
+
+    /* Colores */
+    --primary-1: #12141b;
+    --primary-2: #000000;
+
+    --secondary-1:  #abd5f5;
+    --secondary-2: #ffffff;
+    --secondary-3: #f7f7f7;
+
+    /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+/* Estilos para el body */
+
+body {
+    font-family: var(--font-3);
+    color: var(--primary-1);
+
+    background-color: var(--secondary-1);
+}
+
+.logo {
+    height: 10rem;
+
+    object-fit: contain;
+}
+
+/* Estilos de las cards de Productos destacados */
+
+.productTitle {
+    font-family: var(--font-2);
+    font-size: var(--text-title);
+    text-align: center;
+
+    margin: 4.4rem 0;
+}
+
+.bg-blue {
+    background-color: var(--secondary-1);
+}
+
+.title-product {
+    font-family: var(--font-2);
+    font-size: var(--text-subheader);
+    text-align: center;
+
+    margin-top: 0.8rem;
+}
+
+.parragraph {
+    font-family: var(--font-3);
+    font-size: var(--text-base);
+    text-align: center;
+
+    margin-top: 0.8rem;
+}
+
+.card {
+    margin: 1.2rem  auto 1.2rem auto;
+}
+
+
+/* Estilos del pie de pagina */
+
+footer {
+    width: 100%;
+    background-color: #000000;
+}
+
+footer h3 {
+    margin-top: 0.8rem;
+
+    font-family: var(--font-2);
+    font-size: var(--text-base);
+    font-weight: 300;
+    color: var(--secondary-1);
+
+    text-align: center;
+}
+
+footer div p {
+    margin-left: 2rem;
+    font-family: var(--font-3);
+    font-size: 1rem;
+    color: var(--secondary-1);
+}
+
+footer div a img {
+    width: 1.5rem;
+}
+
+.footerIcons a {
+    margin: 0 0.8rem 0 0; 
+}
+
+.footerIcons a:nth-child(3) {
+    margin-right: 1.2rem;
+}
+
+.icon {
+    filter: invert(82%) sepia(19%) saturate(898%) hue-rotate(178deg) brightness(101%) contrast(92%);
+}
+
+/* Posicionamiento de los elementos del footer con flexbox */
+.footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Estilos de las diferentes paginas */
+
+.title {
+    font-family: var(--font-2);
+    font-size: var(--text-title);
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-top: 7.2rem;
+}
+
+
+/* Posicionamiento de los productos en las diferentes paginas usando grid */
+
+.productItems {
+    margin: 7.2rem 4rem 7.2rem 4rem;
+
+    display: grid;
+
+    grid-template-areas: 
+    "producto1 producto2 producto3 producto4"
+    "producto5 producto6 producto7 producto8"
+    "producto9 producto10 producto11 producto12";
+
+    grid-template-columns: 25% 25% 25% 25%; 
+
+    grid-template-rows: repeat(3, 50rem);
+}
+
+.product1 {
+    grid-area: producto1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product2 {
+    grid-area: producto2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product3 {
+    grid-area: producto3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product4 {
+    grid-area: producto4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product5 {
+    grid-area: producto5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product6 {
+    grid-area: producto6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product7 {
+    grid-area: producto7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product8 {
+    grid-area: producto8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product9 {
+    grid-area: producto9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product10 {
+    grid-area: producto10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product11 {
+    grid-area: producto11;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product12 {
+    grid-area: producto12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de la seccion de productos */
+
+.productItems div {
+    margin: 1.2rem 0.8rem
+}
+
+.productItems div img {
+    height: 40rem;
+    width: 32rem;
+}
+
+.productItems div h2 {
+    font-size: var(--text-subheader);
+    font-weight: bold;
+
+    margin: 0.4rem 0 0 0;
+}
+
+.productItems div p {
+    font-size: var(--text-note);
+
+    margin: 0.4rem 0 0 0;
+}
+
+/* Estilos pagina Ayuda */
+
+.helpCenter{
+    margin: 0 2rem 5.2rem 2rem;
+}
+
+.title2 {
+    margin-top: 2rem;
+    font-family: var(--font-2);
+    font-size: var(--text-title);
+    color: var(--primary-1);
+}
+
+.subtitle {
+    margin-top: 1.6rem;
+    font-family: var(--font-3);
+    font-size: var(--text-subheader);
+    font-weight: 800;
+    color: var(--primary-1);
+}
+
+.tableSubtitle {
+    margin-top: 1.6rem;
+    text-align: center;
+    font-family: var(--font-3);
+    font-size: var(--text-subheader);
+    font-weight: 800;
+    color: var(--primary-1);
+}
+
+.helpCenter p {
+    margin-top: 0.4rem;
+    text-align: justify;
+    font-family: var(--font-3);
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--primary-1);
+}
+
+.helpCenter ul {
+    margin-left: 2rem;
+}
+
+.helpCenter ul li {
+    margin-top: 0.4rem;
+    text-align: justify;
+    font-family: var(--font-3);
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--primary-1);
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 50%;
+    margin-top: 1.6rem;
+    border-collapse: collapse;
+    font-family: var(--font-3);
+    font-size: var(--text-base);
+    color: var(--primary-1);
+}
+
+th, td {
+    border: 0.1rem solid var(--primary-2);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary-3);
+}
+
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    margin-top: 2rem;
+}
+
+/* Estilos para el Carrito */
+
+.cart {
+    margin: 2.4rem;
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+    background-color: var(--secondary-1);
+}
+
+.shopping-cart img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.shopping-cart p{
+    font-size: var(--text-base);
+    font-weight: bold;
+}
+
+.order-container {
+    margin: 3.2rem 2.4rem 3.2rem 2.4rem;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-subheader);
+    color: var(--primary-2);
+}
+.order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+    font-size: var(--text-subheader);
+    color: var(--primary-2);
+}
+
+.primary-button {
+    background-color: var(--primary-2);
+    border-radius: 8px;
+    border: none;
+    color: var(--secondary-1);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--text-subheader);
+    font-weight: bold;
+    height: 50px;
+}
+
+/*  --------------------------Responsive Media Querys ------------------------ */
+
+/* Break Points
+Mobile: 320px - 425px
+Tablet: 768px - 1024
+Desktop: 1025px- 1440px
+*/
+
+/* Mobile View */
+@media screen and (min-width: 320px) and (max-width: 425px){
+    html {
+        scrollbar-width: none;
+    }
+
+    .title {
+        margin-top: 3.2rem;
+    }
+
+    .productItems {
+        margin: 3.2rem 0.4rem 3.2rem 0.4rem;
+
+        display: grid;
+
+        grid-template-areas: 
+        "producto1 producto2"
+        "producto3 producto4"
+        "producto5 producto6"
+        "producto7 producto8"
+        "producto9 producto10"
+        "producto11 producto12";
+
+        grid-template-columns: 50% 50%;
+
+        grid-template-rows: repeat(6, 40rem);
+    }
+
+    .productItems div {
+        margin: 0.4rem
+    }
+
+    .productItems div img {
+        height: 24rem;
+        width: 100%
+    }
+
+    .productItems div h2 {
+        font-size: var(--text-base);
+        margin: 0.4rem 0;       
+    }
+
+    .productItems div p {
+        font-size: var(--text-note);
+        margin: 0.4rem 0;
+    }
+
+    th, td {
+        font-size: var(--text-note);
+    }
+
+    .contactEmail {
+        font-size: var(--text-note);
+        font-weight: bold;
+    }
+}
+
+/* Tablet/laptop View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        scrollbar-width: none;
+    }
+
+    .productItems {
+        margin: 3.2rem 1.2rem 3.2rem 1.2rem;
+
+        display: grid;
+
+        grid-template-areas: 
+        "producto1 producto2 producto3"
+        "producto4 producto5 producto6"
+        "producto7 producto8 producto9"
+        "producto10 producto11 producto12";
+
+        grid-template-columns: 33% 33% 33%;
+
+        grid-template-rows: repeat(4, 40rem);
+    }
+
+    .productItems div {
+        margin: 0.8rem
+    }
+
+    .productItems div img {
+        height: 32rem;
+        width: 100%;
+    }
+
+    .productItems div h2, .productItems div p {
+        margin: 0.4rem 0;
+
+        text-align: justify;        
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    html {
+        scrollbar-width: none;
+    }
+
+    .productItems {
+        margin: 5.2rem 4rem 5.2rem 4rem;
+    }
+
+    .productItems div {
+        margin: 0.8rem
+    }
+
+    .productItems div img {
+        height: 36rem;
+        width: 100%;
+    }
+
+    .productItems div h2, .productItems div p {
+        margin: 0.4rem 0;
+
+        text-align: justify;        
+    }
+}
