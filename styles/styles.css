@@ -299,6 +299,19 @@ footer div a img {
     margin: 0.4rem 0 0 0;
 }
 
+.btn-agregar {
+    width: 10rem;
+    height: 4rem;
+    background-color: var(--primary-2);
+
+    font-family: var(--font-3);
+    font-size: var(--text-caption);
+    color: var(--secondary-1);
+
+    border-radius: 5px;
+    margin-top: 0.4rem;
+}
+
 /* Estilos pagina Ayuda */
 
 .helpCenter{

@@ -1,16 +1,16 @@
 let productosMugs = [
-    {id:13, class: "product1", img: "../imagenes/mug1.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:14, class: "product2", img: "../imagenes/mug2.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:15, class: "product3", img: "../imagenes/mug3.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:16, class: "product4", img: "../imagenes/mug1.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:17, class: "product5", img: "../imagenes/mug2.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:18, class: "product6", img: "../imagenes/mug3.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:19, class: "product7", img: "../imagenes/mug1.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:20, class: "product8", img: "../imagenes/mug2.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:21, class: "product9", img: "../imagenes/mug3.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:22, class: "product10", img: "../imagenes/mug1.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:23, class: "product11", img: "../imagenes/mug2.jpg", h2:"Descripcion de la prenda", p:"Precio"},
-    {id:24, class: "product12", img: "../imagenes/mug3.jpg", h2:"Descripcion de la prenda", p:"Precio"}
+    {id:13, class: "product1", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
+    {id:14, class: "product2", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"$25000"},
+    {id:15, class: "product3", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
+    {id:16, class: "product4", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
+    {id:17, class: "product5", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
+    {id:18, class: "product6", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
+    {id:19, class: "product7", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
+    {id:20, class: "product8", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
+    {id:21, class: "product9", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
+    {id:22, class: "product10", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
+    {id:23, class: "product11", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
+    {id:24, class: "product12", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"}
 ]
 
 //Variables globales
