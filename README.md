@@ -1,4 +1,5 @@
 # Proyecto-Javascript-Coder
-Primer entregable del proyecto de JS en CoderHouse
-Profe tuve dificultades subiendo el entregable con el codigo entonces lo subi de manera manual, sigo checkeando por que no me funcionó
-Después de hacer un segundo commitment desde la consola de VS  Code, me di cuenta que no esta vez no tuvo problemas, creo que el principal problema fué haber creado el repo en GitHub con un readme, lo tendré en cuenta para la próxima vez.
+Segundo entregable del proyecto de JS en CoderHouse
+Para esta entrega utilice el proyecto de desarrollo web que ya tenia creado para crear el carrito ya que con el conversor de divisas no iba a cubrir todos los temas de la entrega.
+Utilizando el proyecto que ya tenia creado por eso ya todo el CSS y HTML esta creado, lo que busque fue crear las carts y el carrito con JavaScript y tener funcionalidad de esa manera
+para poder cubrir los temas y hacer el  ejercicio propuesto.
