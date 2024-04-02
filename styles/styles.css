@@ -402,6 +402,7 @@ th {
 /* Estilos para el Carrito */
 
 .cart {
+    height: 100vh;
     margin: 2.4rem;
 }
 

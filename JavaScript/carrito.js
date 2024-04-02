@@ -3,9 +3,10 @@ let productsStored = localStorage.getItem("productosCarrito")
 productsStored = JSON.parse(productsStored)
 
 let contenedorCarrito = document.getElementById("cart-section")
+let totalCarrito = document.getElementById("total")
+let botonComprar = document.getElementById("checkout")
 
 //funciones para crear el carrito
-
 function renderCarrito(items){
     items.forEach ((producto) => {
         let carrito = document.createElement("div")
@@ -18,3 +19,19 @@ function renderCarrito(items){
 }
 
 renderCarrito(productsStored)
+
+//funcion para mostrar el total en el carrito
+function showTotal(productosArray) {
+    const total = productosArray.reduce((contador, producto) => contador + producto.precio, 0)
+    totalCarrito.innerText = `${total.toFixed(2)}`
+}
+
+showTotal(productsStored)
+
+//funcion para limpiar carrito que eventualmente llevara a la pestaña para terminar la compra
+// botonComprar.addEventListener('click', comprar)
+// function comprar() {
+//     localStorage.removeItem("productosCarrito")
+// }
+
+// comprar()

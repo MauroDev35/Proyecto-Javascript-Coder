@@ -51,7 +51,6 @@ function addingCartButton(productosArray){
             const productId = element.currentTarget.id
             const productoSeleccionado = productosArray.find (producto => producto.id == productId)
             productosCarrito.push(productoSeleccionado)
-            console.log(productosCarrito)
 
             localStorage.setItem("productosCarrito", JSON.stringify(productosCarrito))
         }
