@@ -39,6 +39,8 @@ function addingCartButton(productosArray){
             productosCarrito.push(productoSeleccionado)
 
             localStorage.setItem("productosCarrito", JSON.stringify(productosCarrito))
+
+            Swal.fire("Producto añadido al carrito");
         }
     })
 }
