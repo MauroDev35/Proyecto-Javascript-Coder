@@ -39,6 +39,21 @@ function addingCartButton(productosArray){
             productosCarrito.push(productoSeleccionado)
 
             localStorage.setItem("productosCarrito", JSON.stringify(productosCarrito))
+
+            Toastify({
+                text: "Producto añadido al carrito",
+                duration: 3000,
+                destination: "../pages/carrito.html",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "left", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "#12141b",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
         }
     })
 }
