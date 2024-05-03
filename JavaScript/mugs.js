@@ -1,18 +1,3 @@
-let productosMugs = [
-    {id:13, class: "product1", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
-    {id:14, class: "product2", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"$25000"},
-    {id:15, class: "product3", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
-    {id:16, class: "product4", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
-    {id:17, class: "product5", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
-    {id:18, class: "product6", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
-    {id:19, class: "product7", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
-    {id:20, class: "product8", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
-    {id:21, class: "product9", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"},
-    {id:22, class: "product10", img: "../imagenes/mug1.jpg", h2:"Taza Negra Grande", p:"$ 30000"},
-    {id:23, class: "product11", img: "../imagenes/mug2.jpg", h2:"Taza Negra", p:"25000"},
-    {id:24, class: "product12", img: "../imagenes/mug3.jpg", h2:"Taza Blanca", p:"$ 32000"}
-]
-
 //Variables globales
 let productosCarrito
 let productosCarritoLS = localStorage.getItem("productosCarrito")
@@ -29,8 +14,10 @@ else {
 }
 
 //funciones para renderizar las paginas de productos y boton para agregar al carrito
-function renderProductos(productosArray, contenedorProductos){
-    productosArray.forEach ((producto) => {
+fetch("../db/mugs.json")
+.then(response => response.json())
+.then(data => {
+    data.forEach(producto => {
         let contenedor = document.createElement("div")
         contenedor.className = `${producto.class}` 
         contenedor.innerHTML = `<img src="${producto.img}">
@@ -38,11 +25,10 @@ function renderProductos(productosArray, contenedorProductos){
                                 <p>${producto.p}</p>
                                 <button class="btn-agregar" id="${producto.id}">Agregar</button>`
     
-        contenedorProductos.appendChild(contenedor)
+        contenedorMug.appendChild(contenedor)
     })
-    addingCartButton(productosArray)
-}
-
+    addingCartButton(data)
+})
 
 function addingCartButton(productosArray){
     let addbtn = document.querySelectorAll(".btn-agregar")
@@ -56,5 +42,3 @@ function addingCartButton(productosArray){
         }
     })
 }
-
-renderProductos(productosMugs, contenedorMug)

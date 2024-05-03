@@ -1,20 +1,3 @@
-//Arrays con los objetos para crear las tarjetas
-let productosAgenda = [
-    {id:1, class: "product1", img: "../imagenes/sketchbook1.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:2, class: "product2", img: "../imagenes/sketchbook2.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:3, class: "product3", img: "../imagenes/sketchbook3.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:4, class: "product4", img: "../imagenes/sketchbook1.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:5, class: "product5", img: "../imagenes/sketchbook2.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:6, class: "product6", img: "../imagenes/sketchbook3.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:7, class: "product7", img: "../imagenes/sketchbook1.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:8, class: "product8", img: "../imagenes/sketchbook2.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:9, class: "product9", img: "../imagenes/sketchbook3.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:10, class: "product10", img: "../imagenes/sketchbook1.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:11, class: "product11", img: "../imagenes/sketchbook2.jpg", h2:"Agenda", p:"$ 25000"},
-    {id:12, class: "product12", img: "../imagenes/sketchbook3.jpg", h2:"Agenda", p:"$ 25000"},
-]
-
-
 //Variables globales
 let productosCarrito
 let productosCarritoLS = localStorage.getItem("productosCarrito")
@@ -32,8 +15,10 @@ else {
 }
 
 //funciones para renderizar las paginas de productos y boton para agregar al carrito
-function renderProductos(productosArray, contenedorProductos){
-    productosArray.forEach ((producto) => {
+fetch("../db/agenda.json")
+.then(response => response.json())
+.then(data => {
+    data.forEach(producto => {
         let contenedor = document.createElement("div")
         contenedor.className = `${producto.class}` 
         contenedor.innerHTML = `<img src="${producto.img}">
@@ -41,11 +26,10 @@ function renderProductos(productosArray, contenedorProductos){
                                 <p>${producto.p}</p>
                                 <button class="btn-agregar" id="${producto.id}">Agregar</button>`
     
-        contenedorProductos.appendChild(contenedor)
+        contenedorAgenda.appendChild(contenedor)
     })
-    addingCartButton(productosArray)
-}
-
+    addingCartButton(data)
+})
 
 function addingCartButton(productosArray){
     let addbtn = document.querySelectorAll(".btn-agregar")
@@ -59,9 +43,3 @@ function addingCartButton(productosArray){
         }
     })
 }
-
-//renderizando las paginas
-renderProductos(productosAgenda, contenedorAgenda)
-
-
-

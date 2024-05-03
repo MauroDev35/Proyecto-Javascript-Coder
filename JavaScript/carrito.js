@@ -23,15 +23,7 @@ renderCarrito(productsStored)
 //funcion para mostrar el total en el carrito
 function showTotal(productosArray) {
     const total = productosArray.reduce((contador, producto) => contador + producto.precio, 0)
-    totalCarrito.innerText = `${total.toFixed(2)}`
+    totalCarrito.innerText = `${total}`
 }
 
 showTotal(productsStored)
-
-//funcion para limpiar carrito que eventualmente llevara a la pestaña para terminar la compra
-// botonComprar.addEventListener('click', comprar)
-// function comprar() {
-//     localStorage.removeItem("productosCarrito")
-// }
-
-// comprar()

@@ -1,0 +1,14 @@
+[
+    {"id":1, "class": "product1", "img": "../imagenes/sketchbook1.jpg", "h2":"Agenda", "p":25000},
+    {"id":2, "class": "product2", "img": "../imagenes/sketchbook2.jpg", "h2":"Agenda", "p":25000},
+    {"id":3, "class": "product3", "img": "../imagenes/sketchbook3.jpg", "h2":"Agenda", "p":25000},
+    {"id":4, "class": "product4", "img": "../imagenes/sketchbook1.jpg", "h2":"Agenda", "p":25000},
+    {"id":5, "class": "product5", "img": "../imagenes/sketchbook2.jpg", "h2":"Agenda", "p":25000},
+    {"id":6, "class": "product6", "img": "../imagenes/sketchbook3.jpg", "h2":"Agenda", "p":25000},
+    {"id":7, "class": "product7", "img": "../imagenes/sketchbook1.jpg", "h2":"Agenda", "p":25000},
+    {"id":8, "class": "product8", "img": "../imagenes/sketchbook2.jpg", "h2":"Agenda", "p":25000},
+    {"id":9, "class": "product9", "img": "../imagenes/sketchbook3.jpg", "h2":"Agenda", "p":25000},
+    {"id":10, "class": "product10", "img": "../imagenes/sketchbook1.jpg", "h2":"Agenda", "p":25000},
+    {"id":11, "class": "product11", "img": "../imagenes/sketchbook2.jpg", "h2":"Agenda", "p":25000},
+    {"id":12, "class": "product12", "img": "../imagenes/sketchbook3.jpg", "h2":"Agenda", "p":25000}
+]
